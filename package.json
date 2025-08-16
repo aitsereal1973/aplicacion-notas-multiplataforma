@@ -4,17 +4,17 @@
   "description": "Una aplicación de notas sencilla que permite a los usuarios crear, editar y eliminar notas en dispositivos móviles y de escritorio utilizando tecnologías web modernas.",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node server.js", // Inicia el servidor
+    "client": "npm start --prefix client", // Inicia la aplicación cliente
+    "dev": "concurrently \"npm run server\" \"npm run client\"" // Inicia ambos servidores en el entorno de desarrollo
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.10.9"
+    "express": "^4.17.1", // Framework web para Node.js
+    "mongoose": "^5.10.9" // ODM para MongoDB
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.7"
+    "concurrently": "^5.3.0", // Permite ejecutar múltiples comandos en paralelo
+    "nodemon": "^2.0.7" // Reinicia el servidor automáticamente en los cambios
   },
   "repository": {
     "type": "git",
